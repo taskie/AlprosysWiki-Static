@@ -1,7 +1,0 @@
-@import url("mplus.css");
-
-@import url("screen.css"); /* default gitit screen styles */
-@import url("hk-pyg.css"); /* for syntax highlighting */
-
-/* Put your custom style modifications here: */
-@import url("external-link.css");
