@@ -1,22 +1,23 @@
+@require "colors"
 @require "reset-fonts-grids";
 
-html { background: #f9f9f9; color: black; }
+html { background: #ffffff; color: $aps-text; }
 body { margin: 10px; font-family: mplus-2p-ascii; }
 
-fieldset { border: 1px solid #ccc; padding: 1em; }
+fieldset { border: 1px solid $aps-theme; padding: 1em; }
 legend { font-weight: bold; margin-left: 1em; padding: 4px; }
 textarea, input[type='text'], input[type='password'], select { border: 1px solid #ccc; background: #fff; }
-textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover { border-color: #aaa; }
-textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus { border-color: #888; outline: 2px solid #ffffaa; }
+textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover { border-color: $aps-theme; }
+textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus { border-color: white; outline: 2px solid #ffffaa; }
 input, select { cursor: pointer; }
 input[type='text'] { cursor: text; }
 textarea,  input { padding: .3em .4em .15em .4em; }
 select { padding: .1em .2em 0 .2em; }
 option { padding: 0 .4em; }
 table, tr, td, th { border: none; }
-hr { height: 1px; color: #aaa; background-color: #aaa; border: 0; margin: .2em 0 .2em 0; }
+hr { height: 1px; color: $aps-theme; background-color: $aps-theme; border: 0; margin: .2em 0 .2em 0; }
 
-h1, h2, h3, h4, h5, h6 { border-bottom: 1px solid #aaa; }
+h1, h2, h3, h4, h5, h6 { border-bottom: 1px solid $aps-theme; color: $aps-theme; }
 
 h1.pageTitle { font-size: 197%; margin: 0.2em 0 .5em; font-weight: 900; }
 
@@ -50,10 +51,10 @@ button, input[type="checkbox"], input[type="radio"], input[type="reset"], input[
 
 blockquote { padding: 0 1.6em; color: #666; }
 
-a:link { text-decoration: underline; color: #36c; }
-a:visited { text-decoration: underline; color: #99c; }
-a:hover { text-decoration: underline; color: #c33; }
-a:active,  a:focus { text-decoration: underline; color: #000; }
+a:link { text-decoration: underline; color: $aps-a; }
+a:visited { text-decoration: underline; color: $aps-a-visited; }
+a:hover { text-decoration: underline; }
+a:active,  a:focus { text-decoration: underline; }
 
 input.search_term { width: 95% }
 
@@ -66,9 +67,9 @@ h3 > a:link, h3 > a:active, h3 > a:hover, h3 > a:focus, h3 > a:visited,
 h4 > a:link, h4 > a:active, h4 > a:hover, h4 > a:focus, h4 > a:visited,
 h5 > a:link, h5 > a:active, h5 > a:hover, h5 > a:focus, h5 > a:visited,
 h6 > a:link, h6 > a:active, h6 > a:hover, h6 > a:focus, h6 > a:visited {
-        color: black; text-decoration: none; }
+        color: $aps-theme; text-decoration: none; }
 
-#content { border: 1px solid #ccc; background-color: #fff; padding: 1em; font-size: 108%; }
+#content { border: 1px solid $aps-theme; background-color: #fff; padding: 1em; font-size: 108%; }
 #content p, #content pre, #content li { line-height: 140%; }
 
 #userbox  { text-align: right; font-weight: bold; margin: 1em; }
@@ -78,13 +79,13 @@ h6 > a:link, h6 > a:active, h6 > a:hover, h6 > a:focus, h6 > a:visited {
 #sidebar fieldset { background-color: white; margin-bottom: 1em; padding: 0; font-size: 93%; }
 #sidebar fieldset, #sidebar fieldset legend { font-weight: normal; }
 #sidebar ul { padding: 0; margin: 0; margin-left: 1.6em; line-height: 1.5em; }
-#sidebar ul li { color: #888; list-style: square; }
+#sidebar ul li { color: $aps-text; list-style: square; }
 
-div#TOC { background-color: #f9f9f9; border: 10px solid white; margin: 0.8em; margin-right: 0; padding: 0.4em; }
+div#TOC { background-color: white; border: 1px dotted $aps-theme; margin: 1.5em; margin-right: 0; padding: 0.4em; }
 #TOC ul { padding: 0 0 0 1em; margin: 0; list-style: none; }
 
 #sidebar input, #sidebar select { font-size:  93%; padding: 0.1em; }
-#sidebar input[type='submit'] { border: none; background-color: #ccc; color: white; }
+#sidebar input[type='submit'] { border: none; background-color: $aps-theme; color: white; }
 
 #exportbox select { width: 8.5em; border: 1px solid #ccc; padding: 0; }
 #exportbox { margin: 0.3em 0 0.5em 0.4em; padding: 0; }
@@ -120,11 +121,12 @@ pre.matches span.highlighted { background-color: yellow; }
 
 ul.messages > li { color: red; list-style: square; font-weight: bold; }
 
-ul.tabs { padding: 0; margin: 0 0 1px 0; }
-ul.tabs li { display: inline; border: 1px solid #ccc; border-bottom: none; padding: 0 0.6em 0 0.6em;
+ul.tabs { padding: 0; margin: 0 0 2px 0; }
+ul.tabs li { display: inline; border: 1px solid $aps-theme; border-bottom-width: 0; padding: 0 0.6em 0 0.6em;
     margin: 0 0 0 1.2em; background: white; }
 ul.tabs li.selected { border-bottom: 3px solid white; }
-ul.tabs li a { text-decoration: none; font-size: 93%; font-weight: bold; margin: 0; color: #36c; }
+ul.tabs li a { text-decoration: none; font-size: 93%; font-weight: normal; margin: 0; color: $aps-a; }
+ul.tabs li.selected a { font-weight: bold; color: $aps-theme; }
 
 .index ul { list-style: none; margin: 0; padding: 0; }
 .index li { list-style: none; background-position: 0 1px; background-repeat: no-repeat; padding-left: 20px; }
