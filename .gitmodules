@@ -1,0 +1,6 @@
+[submodule "my-gulp-skel"]
+	path = my-gulp-skel
+	url = git@github.com:taskie/my-gulp-skel.git
+[submodule "wikidata"]
+	path = wikidata
+	url = git@github.com:taskie/AlprosysWiki.git

@@ -1,0 +1,10 @@
+build
+tmp
+
+.cabal-sandbox
+gitit
+gitit-users
+*.log
+
+\#*
+.\#*
