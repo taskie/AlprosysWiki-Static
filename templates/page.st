@@ -8,6 +8,7 @@
     <link href="$base$/_feed$pageUrl$" type="application/atom+xml" rel="alternate" title="This page's ATOM Feed" />
     $endif$
     <title>$wikititle$ - $pagetitle$</title>
+    <script src="$base$/main.js" type="text/javascript"></script>
     $if(printable)$
     <link href="$base$/css/print.css" rel="stylesheet" media="all" type= "text/css" />
     $else$
@@ -20,9 +21,10 @@
     <div id="doc3" class="yui-t1">
         <div id="yui-main">
           <div id="maincol" class="yui-b">
-            $userbox()$
+	    $breadcrumb()$
             $tabs$ 
             $content()$
+	    $breadcrumb()$
             $footer()$
           </div>
         </div>
