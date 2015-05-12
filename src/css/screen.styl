@@ -73,9 +73,12 @@ h6 > a:link, h6 > a:active, h6 > a:hover, h6 > a:focus, h6 > a:visited {
 #content p, #content pre, #content li { line-height: 140%; }
 
 .breadcrumb
-  font-weight bold
   margin 1em
-  color rgba(0,0,0,0)
+  visibility hidden
+  color $aps-theme
+  a
+    font-weight bold
+    color $aps-theme
   &:nth-child(odd)
     text-align right
   

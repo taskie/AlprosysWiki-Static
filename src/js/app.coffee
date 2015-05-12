@@ -21,4 +21,4 @@ document.addEventListener "DOMContentLoaded", ->
     breadcrumbs = document.querySelectorAll(".breadcrumb")
     for breadcrumb in breadcrumbs
         breadcrumb.innerHTML = components.join("/")
-        breadcrumb.style.color = "#888"
+        breadcrumb.style.visibility = "visible"
