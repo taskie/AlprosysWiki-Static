@@ -42,6 +42,7 @@
         </div>
     </div>
     $javascripts$
+    <script src="$base$/js/mermaid.full.js"></script>
     $expire()$
     $getuser()$
   </body>

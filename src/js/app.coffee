@@ -17,6 +17,7 @@ document.addEventListener "DOMContentLoaded", ->
         if href == ""
           href = "/"
         components[i] = "<a href=\"#{href}\">#{components[i]}</a>"
+    # components.unshift("<a href=\"http://alprosys.com\">ALPROSYS</a>")
 
     breadcrumbs = document.querySelectorAll(".breadcrumb")
     for breadcrumb in breadcrumbs
