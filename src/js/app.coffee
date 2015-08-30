@@ -1,3 +1,5 @@
+require "./ga"
+
 document.addEventListener "DOMContentLoaded", ->
     title = document.querySelector("#content .pageTitle a")
     html = title.innerHTML
