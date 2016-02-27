@@ -1,4 +1,5 @@
 @require "colors"
+@require "solarized"
 @require "reset-fonts-grids";
 
 html { background: #ffffff; color: $aps-text; }
@@ -81,7 +82,7 @@ h6 > a:link, h6 > a:active, h6 > a:hover, h6 > a:focus, h6 > a:visited {
     color $aps-theme
   &:nth-child(odd)
     text-align right
-  
+
 #logo { min-height: 50px; }
 
 #sidebar fieldset { background-color: white; margin-bottom: 1em; padding: 0; font-size: 93%; }
@@ -116,7 +117,7 @@ div#categoryList { padding: 0em; margin: 1em 0 0 0; border: 1px dashed #ccc; }
 .search_result .match { margin-bottom: 15px; }
 
 pre>code { display: block; padding: 0.7em 1em; }
-code { font-size: 93%; background-color: #f8f8f8; border: 1px solid #ddd; overflow: auto; border-radius: 0.2em; }
+code { font-size: 93%; color: base00; background-color: base3; border: 1px solid base2; overflow: auto; border-radius: 0.2em; }
 pre.matches { margin: 0; padding: 0; }
 #pattern { background-color: yellow; font-weight: bold; }
 pre.matches span.highlighted { background-color: yellow; }
