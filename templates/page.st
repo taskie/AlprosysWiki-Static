@@ -15,6 +15,7 @@
     <link href="$base$/css/custom.css" rel="stylesheet" media="screen, projection" type="text/css" />
     <link href="$base$/css/print.css" rel="stylesheet" media="print" type= "text/css" />
     $endif$
+    <link rel="stylesheet" href="//www.alprosys.com/webfonts/mplus-2p-latin.css" />
     <!--[if IE]><link href="$base$/css/ie.css" rel="stylesheet" media="screen, projection" type="text/css" /><![endif]-->
     <meta name="google-site-verification" content="l_Wlv9gIUUQvTH93GUXre1CPXVbWVbxjlpm8JqNyto4" />
   </head>
